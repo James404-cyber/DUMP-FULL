@@ -39,7 +39,7 @@ $ pip install bs4
 $ pkg install git
 $ git clone https://github.com/James404-cyber/DUMP-FULL.git
 $ cd DUMP-FULL
-$ python Dump.py
+$ python2 Dump.py
       
 ```
 
