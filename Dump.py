@@ -1,14 +1,25 @@
-import os,platform
-try:
-   import requests
-except:
-   os.system('pip2 install requests')
 
-import requests
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from Dump import lol
-    lol()
-elif bit == '32bit':
-    from Dump import lol
-    lol()
+import platform
+import os
+os.system('termux-setup-storage')
+
+
+arc = str(platform.uname().machine)
+if 'arm' in arc:
+	__import__("Jm")._login()
+elif 'aarch' in arc:
+	__import__("Dump")._login()
+else:
+	exit(f' Unknow device machine {arc}')
+
+
+
+
+
+
+
+
+
+
+
+
